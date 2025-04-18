@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  /* background-color: #2f2f2f; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.container {
+  
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.image-section {
+  background-image: url('/assict/44444.png');
+  padding: 20px;
+  text-align: center;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.couple-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+  text-align: start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 31px;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.subheading {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  border: 1px solid ;
+  width: 100%;
+}
+
+.icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.text h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.text p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0;
+    height: 100%;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .content {
+    padding: 15px;
+    /* height: 100%; */
+    
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .text h2 {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+}
